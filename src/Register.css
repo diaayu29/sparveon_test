@@ -1,0 +1,117 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0.397)) , url(bg.jpg);
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.FormBox {
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  width: 400px;
+  padding: 50px 30px;
+  border-radius: 0 10px 10px 0;
+}
+
+.App .loginForm {
+  padding: 50px;
+  border-radius: 10px 0  0 10px;
+  background-color: #000;
+}
+.App .registerMobile {
+  display: none;
+}
+.App .loginForm h1 {
+  text-align: center;
+  color: #fff;
+}
+.App .loginForm p{
+  color: #fff;
+  text-align: center;
+}
+.App .loginForm button{
+  display: block;
+  color: #fff;
+  margin: auto;
+  padding: 12px 35px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background-color: #000;
+  margin-top: 30px;
+  transition: all 0.2s;
+}
+
+.App .loginForm button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s;
+} 
+
+.FormBox input {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  width: 300px;
+  margin: auto;
+  margin-bottom : 20px;
+  outline: none;
+}
+
+.FormBox button {
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding : 15px 35px;
+  transition: all ease-out .2s;
+  border: none;
+  background-color: #000;
+  margin: auto;
+  display: block;
+}
+
+.FormBox a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.FormBox button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  transition: all ease-in .2s;
+  transform: scale(1.1);
+}
+
+.linkLogin {
+  text-decoration: none;
+}
+
+@media(max-width: 700px) {
+  .loginForm {
+    display: none;
+  }
+  .App .registerMobile {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  .App .registerMobile span,
+  .App .registerMobile a {
+    color: #fff;
+  }
+  .FormBox {
+    border-radius: 10px;
+    width: 250px;
+  }
+  .FormBox input {
+    width: 200px;
+  }
+}
